@@ -1,0 +1,99 @@
+[
+	{
+		"title": "Producto de prueba postman 3 actualizado con PUT 2",
+		"description": "Este producto es de prueba",
+		"category": "products",
+		"status": true,
+		"price": 24214100,
+		"thumnbail": "Sin imagen",
+		"code": "abcde112323",
+		"stock": 100,
+		"id": "4"
+	},
+	{
+		"0": "3"
+	},
+	{
+		"title": "Producto de prueba1",
+		"description": "Este producto es de prueba",
+		"price": 200,
+		"thumnbail": "Sin imagen",
+		"code": "abcde123",
+		"stock": 100,
+		"id": 1
+	},
+	{
+		"title": "Producto de prueba2",
+		"description": "Este producto es de prueba",
+		"price": 24214100,
+		"thumnbail": "Sin imagen",
+		"code": "abcde112323",
+		"stock": 100,
+		"id": 2
+	},
+	{
+		"title": "Producto de prueba3",
+		"description": "Este producto es de prueba",
+		"price": 23200,
+		"thumnbail": "Sin imagen",
+		"code": "abcde12543673",
+		"stock": 100,
+		"id": 5
+	},
+	{
+		"title": "Producto de prueba3",
+		"description": "Este producto es de prueba",
+		"price": 23200,
+		"thumnbail": "Sin imagen",
+		"code": "abcde12543673",
+		"stock": 100,
+		"id": 6
+	},
+	{
+		"id": 7
+	},
+	{
+		"title": "Producto de prueba postman",
+		"description": "Este producto es de prueba",
+		"category": "products",
+		"status": true,
+		"price": 24214100,
+		"thumnbail": "Sin imagen",
+		"code": "abcde112323",
+		"stock": 100,
+		"id": 8
+	},
+	{
+		"title": "Producto de prueba postman 2",
+		"description": "Este producto es de prueba",
+		"category": "products",
+		"status": true,
+		"price": 24214100,
+		"thumnbail": "Sin imagen",
+		"code": "abcde112323",
+		"stock": 100,
+		"id": 9
+	},
+	{
+		"title": "Producto de prueba postman 3",
+		"description": "Este producto es de prueba",
+		"category": "products",
+		"status": true,
+		"price": 24214100,
+		"thumnbail": "Sin imagen",
+		"code": "abcde112323",
+		"stock": 100,
+		"id": 10
+	},
+	{
+		"title": "Producto de prueba postman 3",
+		"description": "Este producto es de prueba",
+		"category": "products",
+		"status": true,
+		"price": 24214100,
+		"thumnbail": "Sin imagen",
+		"code": "abcde112323",
+		"stock": 100,
+		"id": 11
+	}
+]
