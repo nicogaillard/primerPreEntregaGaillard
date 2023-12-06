@@ -11,9 +11,6 @@
 		"id": "4"
 	},
 	{
-		"0": "3"
-	},
-	{
 		"title": "Producto de prueba1",
 		"description": "Este producto es de prueba",
 		"price": 200,
@@ -48,9 +45,6 @@
 		"code": "abcde12543673",
 		"stock": 100,
 		"id": 6
-	},
-	{
-		"id": 7
 	},
 	{
 		"title": "Producto de prueba postman",
@@ -95,5 +89,49 @@
 		"code": "abcde112323",
 		"stock": 100,
 		"id": 11
+	},
+	{
+		"title": "producto nuevo desde html",
+		"price": "123515213",
+		"description": "Este producto es de prueba",
+		"category": "products",
+		"status": true,
+		"thumnbail": "Sin imagen",
+		"code": "abcde112323",
+		"stock": 100,
+		"id": 12
+	},
+	{
+		"title": "",
+		"price": "",
+		"description": "Este producto es de prueba",
+		"category": "products",
+		"status": true,
+		"thumnbail": "Sin imagen",
+		"code": "abcde112323",
+		"stock": 100,
+		"id": 13
+	},
+	{
+		"title": "",
+		"price": "",
+		"description": "Este producto es de prueba",
+		"category": "products",
+		"status": true,
+		"thumnbail": "Sin imagen",
+		"code": "abcde112323",
+		"stock": 100,
+		"id": 14
+	},
+	{
+		"title": "prod HTML",
+		"price": "1234",
+		"description": "Este producto es de prueba",
+		"category": "products",
+		"status": true,
+		"thumnbail": "Sin imagen",
+		"code": "abcde112323",
+		"stock": 100,
+		"id": 15
 	}
 ]
