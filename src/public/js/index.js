@@ -14,7 +14,7 @@ btnProduct.addEventListener("click", function () {
         description: "Este producto es de prueba",
         category: "products",
         status: true,
-        thumnbail: "Sin imagen",
+        thumbnail: "Sin imagen",
         code: "abcde112323",
         stock: 100
     })
