@@ -1,6 +1,6 @@
 import { Router } from "express";
 //import ProductManager from "../dao/managers/fs/ProductManager.js"
-import ProductMongo from "../managers/mongo/productManagerMongo.js";
+import ProductMongo from "../dao/managers/mongo/productManagerMongo.js";
 
 //metodo fs para los archivos
 // const path = './src/files/products.json'

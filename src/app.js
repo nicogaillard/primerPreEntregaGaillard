@@ -1,20 +1,22 @@
 import express from 'express'
 import handlebars from 'express-handlebars'
 
-import ProductManager from './dao/managers/fs/ProductManager.js'
 import { Server } from 'socket.io'
 import __dirname from './utils.js'
 import mongoose from 'mongoose'
-import productsRouter from "./dao/routes/products.router.js"
-import cartRouter from './dao/routes/carts.router.js'
-import viewsRouter from './dao/routes/views.router.js'
+import productsRouter from "./routes/products.router.js"
+import cartRouter from './routes/carts.router.js'
+import viewsRouter from './routes/views.router.js'
 import ProductMongo from './dao/managers/mongo/productManagerMongo.js'
+import ChatMongo from './dao/managers/mongo/chatMongo.js'
 
 const PORT = 8080
 const app = express()
 const path = './src/files/products.json'
-const productManager = new ProductManager(path) 
 const productManagerMongo = new ProductMongo()
+const chatMongo = new ChatMongo()
+let msg = []
+
 
 const httpServer = app.listen(PORT, ()=>{
     console.log(`Servidor funcionando en el puerto :${PORT}`);
@@ -39,11 +41,18 @@ app.use('/', viewsRouter)
 
 socketServer.on("connection", async (socket) =>{
     console.log("Nuevo cliente conectado");
-    const products = await productManager.getProducts()
+    const products = await productManagerMongo.getProducts()
+    let msg = await chatMongo.getChats()
 
     socketServer.emit("listadeproductos", products)
     socket.on("realTimeProducts", async data=>{
-        await productManager.addProduct(data)
         await productManagerMongo.addProduct(data)
+    })
+
+    socketServer.emit("messages", msg)
+    socket.on("chat-message", async(data)=>{
+        await chatMongo.addChat(data)
+        msg = await chatMongo.getChats()
+        socketServer.emit("messages", msg)
     })
 })

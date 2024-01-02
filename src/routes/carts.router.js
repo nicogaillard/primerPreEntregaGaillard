@@ -1,6 +1,6 @@
 import { Router } from "express";
-import  CartManager  from "../managers/fs/CartManager.js";
-import ProductManager from "../managers/fs/ProductManager.js";
+import  CartManager  from "../dao/managers/fs/CartManager.js";
+import ProductManager from "../dao/managers/fs/ProductManager.js";
 
 const path = './src/files/carts.json'
 const pathProducts = './src/files/products.json'

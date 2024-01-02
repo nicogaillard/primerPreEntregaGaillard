@@ -188,5 +188,16 @@
 		"code": "abcde112323",
 		"stock": 100,
 		"id": 20
+	},
+	{
+		"title": "",
+		"price": "",
+		"description": "Este producto es de prueba",
+		"category": "products",
+		"status": true,
+		"thumbnail": "Sin imagen",
+		"code": "abcde112323",
+		"stock": 100,
+		"id": 21
 	}
 ]

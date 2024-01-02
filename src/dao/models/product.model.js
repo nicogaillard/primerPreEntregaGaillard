@@ -5,26 +5,26 @@ const collection = "Product"
 const productSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: true},
+        require: true},
     description: {
         type: String,
-        required: true},
+        require: true},
     category: {
         type: String,
-        required: true},
+        require: true},
     status: Boolean,
     price: {
         type: Number,
-        required: true},
+        require: true},
     thumbnail: {
         type: String,
-        required: true},
+        require: true},
     code: {
         type: String,
-        required: true},
+        require: true},
     stock: {
         type: Number,
-        required: true}
+        require: true}
 })
 
 const productModel = mongoose.model(collection, productSchema)

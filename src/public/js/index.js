@@ -22,19 +22,36 @@ btnProduct.addEventListener("click", function () {
 })
 
 
+function nuevaListaDeProd(listadoProductos) {
+    const listProducts = document.getElementById("listProducts")
+    let li = ""
+    listadoProductos.forEach((el)=> {
+        li += `<li>
+        <h2>${el.title}</h2>
+        <h3>precio: ${el.price}</h3>
+        <p>${el.description}</p>
+        </li>`
+})
+listProducts.innerHTML = li
+}
+
 socket.on("listadeproductos", (data) => {
     nuevaListaDeProd(data)
 })
 
-function nuevaListaDeProd(listadoProductos) {
-    const listProducts = document.getElementById("listProducts")
-let li = ""
-listadoProductos.forEach((el)=> {
-    li += `<li>
-    <h2>${el.title}</h2>
-    <h3>precio: ${el.price}</h3>
-    <p>${el.description}</p>
-    </li>`
+
+
+
+btnProduct.addEventListener("click", function () {
+    socket.emit("realTimeProducts", {
+        title: productInputTitle.value,
+        price: productInputPrice.value,
+        description: "Este producto es de prueba",
+        category: "products",
+        status: true,
+        thumbnail: "Sin imagen",
+        code: "abcde112323",
+        stock: 100
+    })
 })
-listProducts.innerHTML = li
-}
+
